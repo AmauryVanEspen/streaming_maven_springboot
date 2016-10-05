@@ -10,7 +10,7 @@ import streaming.entity.Film;
 
 /**
  *
- * @author ETY
+ * @author admin
  */
 public interface FilmDAO extends CrudRepository<Film, Long>{
     

@@ -10,7 +10,7 @@ import streaming.entity.Saison;
 
 /**
  *
- * @author ETY
+ * @author admin
  */
 public interface SaisonDAO extends CrudRepository<Saison, Long>{
     

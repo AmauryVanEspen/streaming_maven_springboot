@@ -10,7 +10,7 @@ import streaming.entity.Pays;
 
 /**
  *
- * @author ETY
+ * @author admin
  */
 public interface PaysDAO extends CrudRepository<Pays, Long>{
     

@@ -10,30 +10,32 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import streaming.dao.FilmDAO;
-import streaming.entity.Film;
+import streaming.dao.PaysDAO_old;
+import streaming.entity.Pays;
 import streaming.spring.SpringConfig;
 
 /**
  *
- * @author admin
+ * @author ETY
  */
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = SpringConfig.class)
-public class FilmDAOTest {
+@SpringApplicationConfiguration(classes=SpringConfig.class)
+public class PaysDAOTest {
     
     @Autowired
-    private FilmDAO dao;
+    private PaysDAO_old dao;
     
     @Test
-    public void toutSupprimmer(){
-        dao.deleteAll();
+    public void rechercher(){
+        dao.rechercher(1L);
     }
     
     @Test
-    public void ajouter2Films(){
-        dao.save( new Film());
-        dao.save( new Film());
+    public void ajouter(){
+        Pays p = new Pays();
+        p.setNom("FRANCE");
+        
+        dao.ajouter(p);
     }
-    
 }

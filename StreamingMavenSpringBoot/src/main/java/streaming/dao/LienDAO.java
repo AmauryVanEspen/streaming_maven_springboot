@@ -10,7 +10,7 @@ import streaming.entity.Lien;
 
 /**
  *
- * @author ETY
+ * @author admin
  */
 public interface LienDAO extends CrudRepository<Lien, Long>{
     

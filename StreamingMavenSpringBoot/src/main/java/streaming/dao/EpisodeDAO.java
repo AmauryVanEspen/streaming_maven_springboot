@@ -10,7 +10,7 @@ import streaming.entity.Episode;
 
 /**
  *
- * @author ETY
+ * @author admin
  */
 public interface EpisodeDAO extends CrudRepository<Episode, Long>{
     
